@@ -11,3 +11,5 @@ RUN apt-key adv --keyserver pool.sks-keyservers.net --recv-keys 11E9DE8848F2B652
 
 # required for the wee-slack plugin
 RUN pip install websocket-client
+
+RUN apt-get update && apt-get install bitlbee bitlbee-plugin-otr perl -y
